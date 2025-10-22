@@ -48,17 +48,15 @@ end
 fprintf('R² = %.6f\n', R2_a);
 fprintf('MSE = %.6f, RMSE = %.6f, MAE = %.6f\n\n', MSE_a, RMSE_a, MAE_a);
 
-% ========== 计算并输出调整后 R² ==========
-n = length(a_values);     % 样本数量
-p = size(X_a, 2);         % 自变量数量（不含固定项 5.13*(rO+rB)）
+
+n = length(a_values);     
+p = size(X_a, 2);         
 
 R2_adj_a = 1 - (1 - R2_a) * (n - 1) / (n - p - 1);
 
-fprintf('调整后 R² = %.6f\n', R2_adj_a);
+fprintf('R² = %.6f\n', R2_adj_a);
 
-% ========== 计算 AIC / BIC ==========
-% AIC = n * log(RSS/n) + 2 * p
-% BIC = n * log(RSS/n) + p * log(n)
+
 RSS = sum(residuals_a .^ 2);
 
 AIC_a = n * log(RSS / n) + 2 * p;
@@ -67,4 +65,5 @@ BIC_a = n * log(RSS / n) + p * log(n);
 fprintf('AIC = %.6f\n', AIC_a);
 fprintf('BIC = %.6f\n', BIC_a);
 fprintf('n = %.6f\n', n)
+
 fprintf('p = %.6f\n', p)
