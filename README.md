@@ -34,7 +34,7 @@ Hollandite_Prediction/
 ## Requirements
 
 - Python ≥ 3.7 (with libraries: scikit-learn, numpy, pandas, matplotlib)
-- MATLAB ≥ R2020a
+- MATLAB ≥ R2024a
 
 ## Citation
 
