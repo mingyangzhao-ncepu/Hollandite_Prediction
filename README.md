@@ -21,8 +21,8 @@ Hollandite_Prediction/
 
 - **Code/ML**: Contains Python scripts for ANN and SVR models. These can be executed using common Python IDEs such as PyCharm or Jupyter Notebook.
 - **Code/Regression**: Contains MATLAB scripts for:
-  - **MLR**: Multivariate Linear Regression for predicting lattice parameter a.
-  - **MPR**: Polynomial Regression (up to second degree) for predicting c and d-d.
+  - **MLR**: Multivariate Linear Regression for predicting lattice parameter a, c, and d-d.
+  - **MPR**: Polynomial Regression (up to second degree) for predicting lattice parameter a, c, and d-d.
   - **Symmetry**: Regression model using a critical size descriptor (τ) to classify tetragonal vs. monoclinic structures.
 
 ## Data Description
@@ -38,8 +38,8 @@ Hollandite_Prediction/
 
 ## Citation
 
-If you want to use the data and code in this repository, please contact the author first. Permission and citation requirements will be provided accordingly.
+If you want to use the data and code in this repository, please contact the authors first. Permission and citation requirements will be provided accordingly.
 
 ## Contact
 
-For inquiries, please contact: [Your Name] (email@example.com)
+For inquiries, please contact: Mingyang Zhao (myzhao@ncepu.edu.cn); Zhenfeng Tong (zhenfeng_tong@ncepu.edu.cn)
