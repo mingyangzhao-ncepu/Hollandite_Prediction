@@ -50,7 +50,7 @@ MAE_c = mean(abs(residuals_c));
 R2_c = 1 - sum(residuals_c.^2) / sum((c_values - mean(c_values)).^2);
 
 
-fprintf('===== 公式 2: c = sqrt(2)*(rO+rB) + w1*deltaA + w2*(deltaA^2) + w3*ENA + w4*(ENA^2) + w5*ENB + w6*(ENB^2) + w7*Occ + w8*(Occ^2) + w9*(deltaA*ENA) + w10*(deltaA*ENB) + w11*(deltaA*Occ) + w12*(ENA*ENB) + w13*(ENA*Occ) + w14*(ENB*Occ) =====\n');
+fprintf('===== 2: c = sqrt(2)*(rO+rB) + w1*deltaA + w2*(deltaA^2) + w3*ENA + w4*(ENA^2) + w5*ENB + w6*(ENB^2) + w7*Occ + w8*(Occ^2) + w9*(deltaA*ENA) + w10*(deltaA*ENB) + w11*(deltaA*Occ) + w12*(ENA*ENB) + w13*(ENA*Occ) + w14*(ENB*Occ) =====\n');
 for i = 1:length(coefficients_c)
     fprintf('w%d = %.6f\n', i, coefficients_c(i));
 end
@@ -74,4 +74,5 @@ BIC_c = n * log(RSS / n) + p * log(n);
 fprintf('AIC = %.6f\n', AIC_c);
 fprintf('BIC = %.6f\n', BIC_c);
 fprintf('n = %.6f\n', n)
+
 fprintf('p = %.6f\n', p)
