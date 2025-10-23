@@ -36,6 +36,18 @@ Hollandite_Prediction/
 - Python ≥ 3.7 (with libraries: scikit-learn, numpy, pandas, matplotlib)
 - MATLAB ≥ R2024a
 
+## Model trainin & test
+**ML**
+```
+python  `file_name`
+```
+
+**Regression**
+```
+matlab  `file_name`
+```
+
+
 ## Citation
 
 If you want to use the data and code in this repository, please contact the authors first. Permission and citation requirements will be provided accordingly.
